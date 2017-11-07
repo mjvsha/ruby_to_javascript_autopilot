@@ -4,13 +4,12 @@ function getNewCar() {
     passengers: 0,
     gas: 100
   }
-  console.log(car);
 }
 
-getNewCar();
 
 var cars = [];
-function addCar(new_car) {
+function addCar() {
+  var new_car = getNewCar();
   cars.push(new_car)
 
   console.log("Adding new car to fleet. Fleet size is now " + cars.length)
@@ -18,11 +17,12 @@ function addCar(new_car) {
 
 
 
-// ef add_car(cars, new_car)
-//   cars << new_car
-//   "Adding new car to fleet. Fleet size is now #{cars.length}."
-// end
+
+// function pickUpPassenger(car) {
 //
+//
+// }
+
 // def pick_up_passenger(car)
 //   car[:passengers] += 1
 //   car[:gas] -= 10
